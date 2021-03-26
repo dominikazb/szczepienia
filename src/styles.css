@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+body, html {
+  background-color: red;
+  width: 100%;
+  height: 100%;
+}
+
+.applyGoogleFont {
+  font-family: 'Playfair Display', serif;
+}
+
+.main_div_wrapper {
+  min-height: 100%;
+}
+
+.footer_div {
+}
+

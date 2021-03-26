@@ -8,6 +8,9 @@ import {Component, OnInit} from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  public title = 'Lekarz Rodzinny.blog';
+  public subtitle = 'zdrowie okiem lekarza. od początku. do końca.';
+
   constructor() { }
 
   ngOnInit(): void {
