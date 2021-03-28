@@ -1,8 +1,16 @@
-.footer_main {
-  width: 100%;
-  height: 100px;
-  background-color: #F5F5F5;
-  color: #B8B8B8;
+@media (max-width: 780px) {
+  .footer__wrapper {
+    width: 100%;
+    height: 0px;
+    visibility: hidden;
+  }}
+@media (min-width: 780px) {
+  .footer__wrapper {
+    width: 100%;
+    height: 100px;
+    background-color: #F5F5F5;
+    color: #B8B8B8;
+  }
 }
 
 .social_icon {
@@ -23,6 +31,7 @@ a.social_icon__link:hover {
 
 .family_doc {
   font-size: 12px;
+  text-align: center;
 }
 
 a.family_doc__link {

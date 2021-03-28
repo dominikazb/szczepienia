@@ -7,6 +7,12 @@ import {Component, OnInit} from '@angular/core';
 })
 export class AppStartComponent implements OnInit {
 
+  public fillInQuestionnaire = 'Wypełnij ankietę';
+  public covid = 'Covid';
+  public pneumococcus = 'Pneumokoki';
+  public pregnancy = 'Ciąża';
+  public orderEbook = 'Zamów ebooka';
+
   constructor() { }
 
   ngOnInit(): void {
