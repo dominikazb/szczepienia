@@ -17,7 +17,7 @@
 
 @media (max-width: 780px) {
   .questionnaire__image {
-    width: 80%;
+    width: 95%;
     height: auto;
     border-radius: 10px;
   }
@@ -65,7 +65,7 @@
 
 @media (max-width: 780px) {
   .small_link__image {
-    width: 80%;
+    width: 95%;
     height: auto;
     border-radius: 5px;
     margin-bottom: 20px;
@@ -109,7 +109,7 @@
 
 @media (max-width: 780px) {
   .order_ebook__image {
-    width: 80%;
+    width: 95%;
     height: 150px;
     border-radius: 5px;
     margin-bottom: 20px;
