@@ -1,22 +1,62 @@
 body, html {
   width: 100%;
+  background-color: #F5F5F5;
 }
 
 .applyGoogleFont {
   font-family: 'Playfair Display', serif;
 }
 
+
+
+
+/* ============ question card layout ============ */
+.main_card__wrapper {
+  background-color: #F5F5F5;
+  width: 100%;
+}
+
 @media (max-width: 780px) {
-  .main_div_wrapper {
-    min-height: 100%;
-    width: 100%;
-    padding-top: 120px;
+  .main_card__container {
+    width: 95%;
+    margin-top: 180px;
+    margin-bottom: 30px;
   }
 }
 @media (min-width: 780px) {
-  .main_div_wrapper {
-    min-height: 100%;
-    width: 100%;
-    padding-top: 180px;
+  .main_card__container {
+    width: 40%;
+    margin-top: 180px;
+    margin-bottom: 30px;
   }
+}
+
+div.card.question__card {
+  width: 100%;
+  padding: 30px 30px;
+  border-radius: 15px;
+}
+
+.buttons__wrapper {
+  width: 100%;
+}
+
+.button__left {
+  width: 30%;
+}
+.button__center {
+  width: 40%;
+}
+.button__right {
+  width: 30%;
+}
+
+input[type='radio'] {
+  transform: scale(2.2);
+}
+
+.radio__label {
+  font-size: 22px;
+  padding-left: 20px;
+  font-family: 'Playfair Display', serif;
 }

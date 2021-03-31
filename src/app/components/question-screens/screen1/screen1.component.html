@@ -1,1 +1,35 @@
-<p>screen1 works!</p>
+<div class="main_card__wrapper d-flex justify-content-center align-items-center">
+  <div class="main_card__container">
+    <form [formGroup]="questionnaireForm" (ngSubmit)="onSubmit()">
+      <div class="card question__card">
+        <h4 class="card__title applyGoogleFont">{{question1}}</h4>
+        <hr>
+
+        <div class="card-body">
+          <div class="btn-group-vertical">
+            <label *ngFor="let gender of genders, let i = index">
+              <input formControlName="gender"
+                     [value]="gender"
+                     type="radio"
+                     name="gender"
+                     id="gender">
+              <span class="radio__label">{{gender}}</span>
+            </label>
+          </div>
+        </div>
+        <hr>
+
+        <div class="buttons__wrapper d-flex justify-content-center">
+          <div class="button__left"></div>
+          <div class="button__center"></div>
+          <div class="button__right d-flex justify-content-end">
+            <button class="btn btn-primary btn-block applyGoogleFont"
+                    type="submit"
+                    [disabled]="!questionnaireForm.valid">Dalej
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
