@@ -52,11 +52,11 @@ div.card.question__card {
 }
 
 input[type='radio'] {
-  transform: scale(2.2);
+  transform: scale(2);
 }
 
 .radio__label {
-  font-size: 22px;
+  font-size: 21px;
   padding-left: 20px;
   font-family: 'Playfair Display', serif;
 }

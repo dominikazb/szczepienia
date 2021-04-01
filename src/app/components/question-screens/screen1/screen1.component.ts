@@ -43,7 +43,7 @@ export class Screen1Component implements OnInit {
   }
 
   public onSubmit(): void {
-    this.resultsService.results.answer1 = this.questionnaireForm.value.gender;
-    this.router.navigate(['/question2']);
+    this.resultsService.results.setAnswer1(this.questionnaireForm.value.gender);
+    this.router.navigate(['/question2']).then(() => {});
   }
 }

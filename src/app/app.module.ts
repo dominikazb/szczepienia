@@ -20,6 +20,7 @@ import {Screen12Component} from './components/question-screens/screen12/screen12
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {ResultsService} from './components/shared/results/results.service';
 import {Results} from './components/shared/results/results';
+import {DatePipe} from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,7 @@ import {Results} from './components/shared/results/results';
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [ResultsService, Results],
+  providers: [DatePipe, ResultsService, Results],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
