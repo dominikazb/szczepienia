@@ -73,7 +73,7 @@
     "answer11":"Choroby neurorozwojowe (np. rozszczepy kręgosłupa, rozdwojenie rdzenia, rozszczepy czaszkowo-mózgowe)"
   },
   "11": {
-    "question": "Czy pracujesz jako:",
+    "question":"Czy pracujesz jako:",
     "answer1":"Weterynarz",
     "answer2":"Zajmujesz się wypychaniem zwierząt",
     "answer3":"Diagnosta laboratoryjny",
@@ -85,21 +85,21 @@
     "answer9":"Pracownik służb mundurowych"
   },
   "12": {
-    "question": "Czy jesteś po przeszczepienie narządów lub tkanek?",
+    "question":"Czy jesteś po przeszczepienie narządów lub tkanek?",
     "answers": [
       { "answer":"Tak" },
       { "answer":"Nie" }
     ]
   },
   "13": {
-    "question": "Czy jesteś zakażona/y wirusem HIV?",
+    "question":"Czy jesteś zakażona/y wirusem HIV?",
     "answers": [
       { "answer":"Tak" },
       { "answer":"Nie" }
     ]
   },
   "14": {
-    "question": "Czy cierpisz na zaburzenia odporności?",
+    "question":"Czy cierpisz na zaburzenia odporności?",
     "answers": [
       { "answer":"Tak" },
       { "answer":"Nie" }

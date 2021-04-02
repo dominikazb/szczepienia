@@ -7,8 +7,7 @@ import {Router} from '@angular/router';
 @Component({
   // tslint:disable-next-line:component-selector
   selector: 'screen10',
-  templateUrl: './screen10.component.html',
-  styleUrls: ['./screen10.component.css']
+  templateUrl: './screen10.component.html'
 })
 export class Screen10Component implements OnInit {
 
@@ -42,16 +41,27 @@ export class Screen10Component implements OnInit {
   }
 
   private getPossibleAnswers(): void {
+    // @ts-ignore
     this.answer1 = this.processVariablesService.questionnaireData[10].answer1;
+    // @ts-ignore
     this.answer2 = this.processVariablesService.questionnaireData[10].answer2;
+    // @ts-ignore
     this.answer3 = this.processVariablesService.questionnaireData[10].answer3;
+    // @ts-ignore
     this.answer4 = this.processVariablesService.questionnaireData[10].answer4;
+    // @ts-ignore
     this.answer5 = this.processVariablesService.questionnaireData[10].answer5;
+    // @ts-ignore
     this.answer6 = this.processVariablesService.questionnaireData[10].answer6;
+    // @ts-ignore
     this.answer7 = this.processVariablesService.questionnaireData[10].answer7;
+    // @ts-ignore
     this.answer8 = this.processVariablesService.questionnaireData[10].answer8;
+    // @ts-ignore
     this.answer9 = this.processVariablesService.questionnaireData[10].answer9;
+    // @ts-ignore
     this.answer10 = this.processVariablesService.questionnaireData[10].answer10;
+    // @ts-ignore
     this.answer11 = this.processVariablesService.questionnaireData[10].answer11;
   }
 

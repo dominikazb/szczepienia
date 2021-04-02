@@ -21,6 +21,8 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {ResultsService} from './components/shared/results/results.service';
 import {Results} from './components/shared/results/results';
 import {DatePipe} from '@angular/common';
+import { Screen13Component } from './components/question-screens/screen13/screen13.component';
+import { Screen14Component } from './components/question-screens/screen14/screen14.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +41,9 @@ import {DatePipe} from '@angular/common';
     Screen9Component,
     Screen10Component,
     Screen11Component,
-    Screen12Component
+    Screen12Component,
+    Screen13Component,
+    Screen14Component
   ],
   imports: [
     AppRoutingModule,

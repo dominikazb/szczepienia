@@ -1,5 +1,5 @@
 <div class="main_card__wrapper d-flex justify-content-center align-items-center">
-  <div class="main_card__container__wide">
+  <div class="main_card__container__wide_60">
     <form [formGroup]="questionnaireForm" (ngSubmit)="onSubmit()">
       <div class="card question__card additional_margin_bottom__100">
 
@@ -62,10 +62,7 @@
             </div>
             <div class="button__center d-flex justify-content-center"></div>
             <div class="button__right d-flex justify-content-end">
-              <button class="btn btn-primary btn-block applyGoogleFont"
-                      type="submit"
-                      [disabled]="!questionnaireForm.valid">Dalej
-              </button>
+              <button class="btn btn-primary btn-block applyGoogleFont" type="submit">Dalej</button>
             </div>
           </div>
         </div>

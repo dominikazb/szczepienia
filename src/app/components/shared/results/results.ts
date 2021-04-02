@@ -1,5 +1,6 @@
 import {Injectable} from '@angular/core';
 import {ResultsQuestion10} from './results-question-10';
+import {ResultsQuestion11} from './results-question-11';
 
 @Injectable()
 export class Results {
@@ -14,7 +15,7 @@ export class Results {
   public answer8: string | undefined;
   public answer9: string | undefined;
   public answer10: ResultsQuestion10 = new ResultsQuestion10();
-  public answer11: string | undefined;
+  public answer11: ResultsQuestion11 = new ResultsQuestion11();
   public answer12: string | undefined;
 
   constructor() {

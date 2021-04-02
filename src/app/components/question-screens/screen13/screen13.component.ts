@@ -2,10 +2,10 @@ import {Component, OnInit} from '@angular/core';
 
 @Component({
   // tslint:disable-next-line:component-selector
-  selector: 'screen12',
-  templateUrl: './screen12.component.html'
+  selector: 'screen13',
+  templateUrl: './screen13.component.html'
 })
-export class Screen12Component implements OnInit {
+export class Screen13Component implements OnInit {
 
   constructor() { }
 

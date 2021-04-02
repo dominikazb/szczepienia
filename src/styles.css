@@ -17,24 +17,34 @@ body, html {
 }
 
 @media (max-width: 780px) {
-  .main_card__container {
+  .main_card__container_40 {
     width: 95%;
     margin-top: 180px;
     margin-bottom: 30px;
   }
-  .main_card__container__wide {
+  .main_card__container__wide_50 {
+    width: 95%;
+    margin-top: 180px;
+    margin-bottom: 30px;
+  }
+  .main_card__container__wide_60 {
     width: 95%;
     margin-top: 180px;
     margin-bottom: 30px;
   }
 }
 @media (min-width: 780px) {
-  .main_card__container {
+  .main_card__container_40 {
     width: 40%;
     margin-top: 180px;
     margin-bottom: 30px;
   }
-  .main_card__container__wide {
+  .main_card__container__wide_50 {
+    width: 50%;
+    margin-top: 180px;
+    margin-bottom: 30px;
+  }
+  .main_card__container__wide_60 {
     width: 60%;
     margin-top: 180px;
     margin-bottom: 30px;
