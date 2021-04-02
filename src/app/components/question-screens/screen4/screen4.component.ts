@@ -44,10 +44,10 @@ export class Screen4Component implements OnInit {
 
   public onSubmit(): void {
     this.resultsService.results.answer4 = this.questionnaireForm.value.yesNoAnswer;
-    this.router.navigate(['/question5']).then(() => {});
+    this.router.navigate(['/question5'], { skipLocationChange: true }).then(() => {});
   }
 
   public goBack(): void {
-    this.router.navigate(['/question3']).then(() => {});
+    this.router.navigate(['/question3'], { skipLocationChange: true }).then(() => {});
   }
 }

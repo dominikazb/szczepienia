@@ -52,10 +52,10 @@ export class Screen2Component implements OnInit {
 
   onSubmit(): void {
     this.resultsService.results.answer2 = this.questionnaireForm.value.yearOfBirth;
-    this.router.navigate(['/question3']).then(() => {});
+    this.router.navigate(['/question3'], { skipLocationChange: true }).then(() => {});
   }
 
   goBack(): void {
-    this.router.navigate(['/questionnaire']).then(() => {});
+    this.router.navigate(['/questionnaire'], { skipLocationChange: true }).then(() => {});
   }
 }

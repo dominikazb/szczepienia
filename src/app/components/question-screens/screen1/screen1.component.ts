@@ -43,6 +43,6 @@ export class Screen1Component implements OnInit {
 
   public onSubmit(): void {
     this.resultsService.results.answer1 = this.questionnaireForm.value.gender;
-    this.router.navigate(['/question2']).then(() => {});
+    this.router.navigate(['/question2'], { skipLocationChange: true }).then(() => {});
   }
 }

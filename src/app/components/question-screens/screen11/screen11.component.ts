@@ -79,7 +79,7 @@ export class Screen11Component implements OnInit {
 
   public onSubmit(): void {
     this.setAnswers();
-    this.router.navigate(['/question12']).then(() => {});
+    this.router.navigate(['/question12'], { skipLocationChange: true }).then(() => {});
   }
 
   private setAnswers(): void {
@@ -95,7 +95,7 @@ export class Screen11Component implements OnInit {
   }
 
   public goBack(): void {
-    this.router.navigate(['/question10']).then(() => {});
+    this.router.navigate(['/question10'], { skipLocationChange: true }).then(() => {});
   }
 
 }
