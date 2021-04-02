@@ -5,6 +5,10 @@ import {AppComponent} from './app.component';
 import {AppStartComponent} from './components/app-start/app-start.component';
 import {FooterComponent} from './components/footer/footer.component';
 import {HeaderComponent} from './components/header/header.component';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {ResultsService} from './components/shared/results/results.service';
+import {Results} from './components/shared/results/results';
+import {DatePipe} from '@angular/common';
 import {Screen1Component} from './components/question-screens/screen1/screen1.component';
 import {Screen2Component} from './components/question-screens/screen2/screen2.component';
 import {Screen3Component} from './components/question-screens/screen3/screen3.component';
@@ -17,12 +21,10 @@ import {Screen9Component} from './components/question-screens/screen9/screen9.co
 import {Screen10Component} from './components/question-screens/screen10/screen10.component';
 import {Screen11Component} from './components/question-screens/screen11/screen11.component';
 import {Screen12Component} from './components/question-screens/screen12/screen12.component';
-import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {ResultsService} from './components/shared/results/results.service';
-import {Results} from './components/shared/results/results';
-import {DatePipe} from '@angular/common';
-import { Screen13Component } from './components/question-screens/screen13/screen13.component';
-import { Screen14Component } from './components/question-screens/screen14/screen14.component';
+import {Screen13Component} from './components/question-screens/screen13/screen13.component';
+import {Screen14Component} from './components/question-screens/screen14/screen14.component';
+import {ResultsComponent} from './components/results/results.component';
+
 
 @NgModule({
   declarations: [
@@ -43,7 +45,8 @@ import { Screen14Component } from './components/question-screens/screen14/screen
     Screen11Component,
     Screen12Component,
     Screen13Component,
-    Screen14Component
+    Screen14Component,
+    ResultsComponent
   ],
   imports: [
     AppRoutingModule,
@@ -51,7 +54,7 @@ import { Screen14Component } from './components/question-screens/screen14/screen
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [DatePipe, ResultsService, Results],
+  providers: [DatePipe, Results, ResultsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

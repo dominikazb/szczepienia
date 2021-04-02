@@ -15,6 +15,7 @@ import {Screen11Component} from './components/question-screens/screen11/screen11
 import {Screen12Component} from './components/question-screens/screen12/screen12.component';
 import {Screen13Component} from './components/question-screens/screen13/screen13.component';
 import {Screen14Component} from './components/question-screens/screen14/screen14.component';
+import {ResultsComponent} from './components/results/results.component';
 
 const routes: Routes = [
   {path: '', component: AppStartComponent},
@@ -32,6 +33,7 @@ const routes: Routes = [
   {path: 'question12', component: Screen12Component},
   {path: 'question13', component: Screen13Component},
   {path: 'question14', component: Screen14Component},
+  {path: 'results', component: ResultsComponent},
   {path: '**', redirectTo: '/', pathMatch: 'full'}
 ];
 

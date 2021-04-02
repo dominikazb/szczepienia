@@ -1,11 +1,11 @@
-import {Component, OnInit} from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-start',
   templateUrl: './app-start.component.html',
   styleUrls: ['./app-start.component.css']
 })
-export class AppStartComponent implements OnInit {
+export class AppStartComponent {
 
   public fillInQuestionnaire = 'Wypełnij ankietę';
   public covid = 'Covid';
@@ -14,8 +14,4 @@ export class AppStartComponent implements OnInit {
   public orderEbook = 'Zamów ebooka';
 
   constructor() { }
-
-  ngOnInit(): void {
-  }
-
 }
