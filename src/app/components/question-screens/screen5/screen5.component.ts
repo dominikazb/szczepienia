@@ -39,22 +39,13 @@ export class Screen5Component implements OnInit {
 
   private buildForm(): void {
     this.questionnaireForm = new FormGroup({
-      yesNoAnswer: new FormControl(this.defaultValue(), Validators.required)
+      yesNoAnswer: new FormControl(this.resultsService.results.answer5, Validators.required)
     });
-  }
-
-  private defaultValue(): string {
-    // @ts-ignore
-    return this.resultsService.results.answer5 ? this.resultsService.results.answer5 : null;
   }
 
   public onSubmit(): void {
     this.resultsService.results.setAnswer5(this.questionnaireForm.value.yesNoAnswer);
-    if (this.resultsService.results.answer5 === 'Nie' && this.resultsService.results.answer1 === 'Kobieta') {
-      this.router.navigate(['/question6']).then(() => {});
-    } else {
-      this.router.navigate(['/question7']).then(() => {});
-    }
+    this.router.navigate(['/question6']).then(() => {});
   }
 
   public goBack(): void {

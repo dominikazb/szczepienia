@@ -32,7 +32,7 @@ export class Screen2Component implements OnInit {
 
   private buildForm(): void {
     this.questionnaireForm = new FormGroup({
-      yearOfBirth: new FormControl(this.defaultValue(), Validators.required)
+      yearOfBirth: new FormControl(this.defaultValue(), Validators.pattern('^[1-9][0-9]*$'))
     });
   }
 

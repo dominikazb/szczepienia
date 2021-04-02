@@ -39,22 +39,13 @@ export class Screen3Component implements OnInit {
 
   private buildForm(): void {
     this.questionnaireForm = new FormGroup({
-      yesNoAnswer: new FormControl(this.defaultValue(), Validators.required)
+      yesNoAnswer: new FormControl(this.resultsService.results.answer3, Validators.required)
     });
-  }
-
-  private defaultValue(): string {
-    // @ts-ignore
-    return this.resultsService.results.answer3 ? this.resultsService.results.answer3 : 0;
   }
 
   public onSubmit(): void {
     this.resultsService.results.setAnswer3(this.questionnaireForm.value.yesNoAnswer);
-    if (this.resultsService.results.answer3 === 'Tak') {
-      this.router.navigate(['/question4']).then(() => {});
-    } else {
-      this.router.navigate(['/question5']).then(() => {});
-    }
+    this.router.navigate(['/question4']).then(() => {});
   }
 
   public goBack(): void {

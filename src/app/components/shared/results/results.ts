@@ -40,30 +40,30 @@ export class Results {
   }
 
   public setAnswer6(answer: string): void {
-    this.answer5 = answer;
+    this.answer6 = answer;
   }
 
   public setAnswer7(answer: string): void {
-    this.answer5 = answer;
+    this.answer7 = answer;
   }
 
   public setAnswer8(answer: string): void {
-    this.answer5 = answer;
+    this.answer8 = answer;
   }
 
   public setAnswer9(answer: string): void {
-    this.answer5 = answer;
+    this.answer9 = answer;
   }
 
   public setAnswer10(answer: string): void {
-    this.answer5 = answer;
+    this.answer10 = answer;
   }
 
   public setAnswer11(answer: string): void {
-    this.answer5 = answer;
+    this.answer11 = answer;
   }
 
   public setAnswer12(answer: string): void {
-    this.answer5 = answer;
+    this.answer12 = answer;
   }
 }

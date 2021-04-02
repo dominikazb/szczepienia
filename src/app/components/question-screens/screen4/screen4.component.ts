@@ -39,22 +39,13 @@ export class Screen4Component implements OnInit {
 
   private buildForm(): void {
     this.questionnaireForm = new FormGroup({
-      yesNoAnswer: new FormControl(this.defaultValue(), Validators.required)
+      yesNoAnswer: new FormControl(this.resultsService.results.answer4, Validators.required)
     });
-  }
-
-  private defaultValue(): string {
-    // @ts-ignore
-    return this.resultsService.results.answer4 ? this.resultsService.results.answer4 : 0;
   }
 
   public onSubmit(): void {
     this.resultsService.results.setAnswer4(this.questionnaireForm.value.yesNoAnswer);
-    if (this.resultsService.results.answer4 === 'Kobieta') {
-      this.router.navigate(['/question5']).then(() => {});
-    } else {
-      this.router.navigate(['/question7']).then(() => {});
-    }
+    this.router.navigate(['/question5']).then(() => {});
   }
 
   public goBack(): void {

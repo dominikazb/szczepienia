@@ -39,13 +39,8 @@ export class Screen6Component implements OnInit {
 
   private buildForm(): void {
     this.questionnaireForm = new FormGroup({
-      yesNoAnswer: new FormControl(this.defaultValue(), Validators.required)
+      yesNoAnswer: new FormControl(this.resultsService.results.answer6, Validators.required)
     });
-  }
-
-  private defaultValue(): string {
-    // @ts-ignore
-    return this.resultsService.results.answer6 ? this.resultsService.results.answer6 : null;
   }
 
   public onSubmit(): void {
