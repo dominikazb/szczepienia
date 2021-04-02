@@ -1,5 +1,5 @@
 <div class="main_card__wrapper d-flex justify-content-center align-items-center">
-  <div class="main_card__container_40">
+  <div class="main_card__container__wide_50">
     <form [formGroup]="questionnaireForm" (ngSubmit)="onSubmit()">
       <div class="card question__card">
         <h4 class="card__title applyGoogleFont">{{question5}}</h4>
@@ -8,7 +8,7 @@
 
         <div class="card-body">
           <div class="btn-group-vertical">
-            <label *ngFor="let yesNoAnswer of answers">
+            <label *ngFor="let yesNoAnswer of answers" class="custom-answer-box">
               <input formControlName="yesNoAnswer"
                      [value]="yesNoAnswer"
                      type="radio"

@@ -17,6 +17,8 @@ export class Results {
   public answer10: ResultsQuestion10 = new ResultsQuestion10();
   public answer11: ResultsQuestion11 = new ResultsQuestion11();
   public answer12: string | undefined;
+  public answer13: string | undefined;
+  public answer14: string | undefined;
 
   constructor() {
   }
