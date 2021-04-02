@@ -1,1 +1,39 @@
-<p>screen7 works!</p>
+<div class="main_card__wrapper d-flex justify-content-center align-items-center">
+  <div class="main_card__container">
+    <form [formGroup]="questionnaireForm" (ngSubmit)="onSubmit()">
+      <div class="card question__card">
+        <h4 class="card__title applyGoogleFont">{{question7}}</h4>
+
+        <hr>
+
+        <div class="card-body">
+          <div class="btn-group-vertical">
+            <label *ngFor="let yesNoAnswer of answers">
+              <input formControlName="yesNoAnswer"
+                     [value]="yesNoAnswer"
+                     type="radio"
+                     name="yesNoAnswer"
+                     id="yesNoAnswer">
+              <span class="radio__label">{{yesNoAnswer}}</span>
+            </label>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="buttons__wrapper d-flex justify-content-center">
+          <div class="button__left d-flex justify-content-start">
+            <button class="btn btn-warning btn-block applyGoogleFont" (click)="goBack()">Cofnij</button>
+          </div>
+          <div class="button__center d-flex justify-content-center"></div>
+          <div class="button__right d-flex justify-content-end">
+            <button class="btn btn-primary btn-block applyGoogleFont"
+                    type="submit"
+                    [disabled]="!questionnaireForm.valid">Dalej
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
