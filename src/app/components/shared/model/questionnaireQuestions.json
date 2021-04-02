@@ -54,10 +54,8 @@
     {
         "question9": "Czy jesteś przed lub po zabiegu usunięcia śledziony lub Twoja śledziona nie działa prawidłowo?",
         "answers": [
-            {
-                "answer1":"Tak",
-                "answer2":"Nie"
-            }
+            { "answer":"Tak" },
+            { "answer":"Nie" }
         ]
     },
     {
