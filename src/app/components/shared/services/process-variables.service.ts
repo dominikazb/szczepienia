@@ -7,9 +7,10 @@ import questionnaireQuestions from '../model/questionnaireQuestions.json';
 export class ProcessVariablesService {
 
     public nextStepButtonText = 'Przejdź dalej';
-    public questions: {question: string, answers: string[]} = questionnaireQuestions;
-
+    public questionnaireData: {
+      1: number, 2: number, 3: number, 4: number, 5: number, 6: number,
+      7: number, 8: number, 9: number, 10: number, 11: number, 12: number
+    } = questionnaireQuestions;
 
     public answer = '';
-
 }

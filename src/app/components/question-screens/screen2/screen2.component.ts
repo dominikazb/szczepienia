@@ -24,7 +24,7 @@ export class Screen2Component implements OnInit {
 
   ngOnInit(): void {
     // @ts-ignore
-    this.question2 = this.processVariablesService.questions[1].question2;
+    this.question2 = this.processVariablesService.questionnaireData[2].question;
     this.generateYears();
     this.buildForm();
   }
@@ -51,7 +51,7 @@ export class Screen2Component implements OnInit {
   }
 
   onSubmit(): void {
-    this.resultsService.results.setAnswer2(this.questionnaireForm.value.yearOfBirth);
+    this.resultsService.results.answer2 = this.questionnaireForm.value.yearOfBirth;
     this.router.navigate(['/question3']).then(() => {});
   }
 

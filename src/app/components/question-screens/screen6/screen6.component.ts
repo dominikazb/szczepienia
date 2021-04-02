@@ -23,7 +23,7 @@ export class Screen6Component implements OnInit {
 
   ngOnInit(): void {
     // @ts-ignore
-    this.question6 = this.processVariablesService.questions[5].question6;
+    this.question6 = this.processVariablesService.questionnaireData[6].question;
     this.getPossibleAnswers();
     this.nextStepButtonText = this.processVariablesService.nextStepButtonText;
     this.buildForm();
@@ -31,7 +31,7 @@ export class Screen6Component implements OnInit {
 
   getPossibleAnswers(): void {
     // @ts-ignore
-    this.processVariablesService.questions[5].answers.forEach(
+    this.processVariablesService.questionnaireData[6].answers.forEach(
         (possibleAnswer: { answer: string; }) => this.answers.push(possibleAnswer.answer)
     );
   }
@@ -43,7 +43,7 @@ export class Screen6Component implements OnInit {
   }
 
   public onSubmit(): void {
-    this.resultsService.results.setAnswer6(this.questionnaireForm.value.yesNoAnswer);
+    this.resultsService.results.answer6 = this.questionnaireForm.value.yesNoAnswer;
     this.router.navigate(['/question7']).then(() => {});
   }
 

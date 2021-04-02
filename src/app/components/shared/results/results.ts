@@ -1,4 +1,5 @@
 import {Injectable} from '@angular/core';
+import {ResultsQuestion10} from './results-question-10';
 
 @Injectable()
 export class Results {
@@ -12,58 +13,10 @@ export class Results {
   public answer7: string | undefined;
   public answer8: string | undefined;
   public answer9: string | undefined;
-  public answer10: string | undefined;
+  public answer10: ResultsQuestion10 = new ResultsQuestion10();
   public answer11: string | undefined;
   public answer12: string | undefined;
 
   constructor() {
-  }
-
-  public setAnswer1(answer: string): void {
-    this.answer1 = answer;
-  }
-
-  public setAnswer2(answer: string): void {
-    this.answer2 = answer;
-  }
-
-  public setAnswer3(answer: string): void {
-    this.answer3 = answer;
-  }
-
-  public setAnswer4(answer: string): void {
-    this.answer4 = answer;
-  }
-
-  public setAnswer5(answer: string): void {
-    this.answer5 = answer;
-  }
-
-  public setAnswer6(answer: string): void {
-    this.answer6 = answer;
-  }
-
-  public setAnswer7(answer: string): void {
-    this.answer7 = answer;
-  }
-
-  public setAnswer8(answer: string): void {
-    this.answer8 = answer;
-  }
-
-  public setAnswer9(answer: string): void {
-    this.answer9 = answer;
-  }
-
-  public setAnswer10(answer: string): void {
-    this.answer10 = answer;
-  }
-
-  public setAnswer11(answer: string): void {
-    this.answer11 = answer;
-  }
-
-  public setAnswer12(answer: string): void {
-    this.answer12 = answer;
   }
 }

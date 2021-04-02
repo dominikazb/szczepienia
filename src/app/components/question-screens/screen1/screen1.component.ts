@@ -23,14 +23,14 @@ export class Screen1Component implements OnInit {
 
   ngOnInit(): void {
     // @ts-ignore
-    this.question1 = this.processVariablesService.questions[0].question1;
+    this.question1 = this.processVariablesService.questionnaireData[1].question;
     this.getPossibleAnswers();
     this.buildForm();
   }
 
   getPossibleAnswers(): void {
     // @ts-ignore
-    this.processVariablesService.questions[0].answers.forEach(
+    this.processVariablesService.questionnaireData[1].answers.forEach(
         (possibleAnswer: { answer: string; }) => this.genders.push(possibleAnswer.answer)
     );
   }
@@ -42,7 +42,7 @@ export class Screen1Component implements OnInit {
   }
 
   public onSubmit(): void {
-    this.resultsService.results.setAnswer1(this.questionnaireForm.value.gender);
+    this.resultsService.results.answer1 = this.questionnaireForm.value.gender;
     this.router.navigate(['/question2']).then(() => {});
   }
 }

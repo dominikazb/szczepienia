@@ -1,1 +1,75 @@
-<p>screen10 works!</p>
+<div class="main_card__wrapper d-flex justify-content-center align-items-center">
+  <div class="main_card__container__wide">
+    <form [formGroup]="questionnaireForm" (ngSubmit)="onSubmit()">
+      <div class="card question__card additional_margin_bottom__100">
+
+        <div class="card-body">
+          <h4 class="card__title applyGoogleFont">{{question10}}</h4>
+
+          <hr>
+          <div class="btn-group-vertical">
+            <label>
+              <input formControlName="answer1" type="checkbox" name="answer1" id="answer1">
+              <span class="checkbox__label">{{answer1}}</span>
+            </label>
+            <label>
+              <input formControlName="answer2" type="checkbox" name="answer2" id="answer2">
+              <span class="checkbox__label">{{answer2}}</span>
+            </label>
+            <label>
+              <input formControlName="answer3" type="checkbox" name="answer3" id="answer3">
+              <span class="checkbox__label">{{answer3}}</span>
+            </label>
+            <label>
+              <input formControlName="answer4" type="checkbox" name="answer4" id="answer4">
+              <span class="checkbox__label">{{answer4}}</span>
+            </label>
+            <label>
+              <input formControlName="answer5" type="checkbox" name="answer5" id="answer5">
+              <span class="checkbox__label">{{answer5}}</span>
+            </label>
+            <label>
+              <input formControlName="answer6" type="checkbox" name="answer6" id="answer6">
+              <span class="checkbox__label">{{answer6}}</span>
+            </label>
+            <label>
+              <input formControlName="answer7" type="checkbox" name="answer7" id="answer7">
+              <span class="checkbox__label">{{answer7}}</span>
+            </label>
+            <label>
+              <input formControlName="answer8" type="checkbox" name="answer8" id="answer8">
+              <span class="checkbox__label">{{answer8}}</span>
+            </label>
+            <label>
+              <input formControlName="answer9" type="checkbox" name="answer9" id="answer9">
+              <span class="checkbox__label">{{answer9}}</span>
+            </label>
+            <label>
+              <input formControlName="answer10" type="checkbox" name="answer10" id="answer10">
+              <span class="checkbox__label">{{answer10}}</span>
+            </label>
+            <label>
+              <input formControlName="answer11" type="checkbox" name="answer11" id="answer11">
+              <span class="checkbox__label">{{answer11}}</span>
+            </label>
+          </div>
+
+          <hr>
+
+          <div class="buttons__wrapper d-flex justify-content-center">
+            <div class="button__left d-flex justify-content-start">
+              <button class="btn btn-warning btn-block applyGoogleFont" (click)="goBack()">Cofnij</button>
+            </div>
+            <div class="button__center d-flex justify-content-center"></div>
+            <div class="button__right d-flex justify-content-end">
+              <button class="btn btn-primary btn-block applyGoogleFont"
+                      type="submit"
+                      [disabled]="!questionnaireForm.valid">Dalej
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

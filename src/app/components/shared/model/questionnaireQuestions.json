@@ -1,122 +1,108 @@
-[
-    {
-        "question1": "Podaj swoją płeć:",
-        "answers": [
-            { "answer":"Kobieta" },
-            { "answer":"Mężczyzna" }
-        ]
-    },
-    {
-        "question2": "Podaj swój rok urodzenia:"
-    },
-    {
-        "question3": "Czy jesteś pracownikiem ochrony zdrowia?",
-        "answers": [
-            { "answer":"Tak" },
-            { "answer":"Nie" }
-        ]
-    },
-    {
-        "question4": "Czy pracujesz na oddziale neonatologicznym lub pediatrycznym?",
-        "answers": [
-            { "answer":"Tak" },
-            { "answer":"Nie" }
-        ]
-    },
-    {
-        "question5": "Czy jesteś w ciąży?",
-        "answers": [
-            { "answer":"Tak" },
-            { "answer":"Nie" }
-        ]
-    },
-    {
-        "question6": "Czy planujesz zajść w ciążę?",
-        "answers": [
-            { "answer":"Tak" },
-            { "answer":"Nie" }
-        ]
-    },
-    {
-        "question7": "Czy jesteś w trakcie karmienia piersią?",
-        "answers": [
-            { "answer":"Tak" },
-            { "answer":"Nie" }
-        ]
-    },
-    {
-        "question8": "Czy masz kontakt z małymi dziećmi?",
-        "answers": [
-            { "answer":"Tak" },
-            { "answer":"Nie" }
-        ]
-    },
-    {
-        "question9": "Czy jesteś przed lub po zabiegu usunięcia śledziony lub Twoja śledziona nie działa prawidłowo?",
-        "answers": [
-            { "answer":"Tak" },
-            { "answer":"Nie" }
-        ]
-    },
-    {
-        "question10": "Czy cierpisz na choroby przewlekłe?",
-        "answers": [
-            {
-                "answer1":"Niewydolność układu oddechowego",
-                "answer2":"Astma oskrzelowa",
-                "answer3":"Przewlekła obturacyjna choroba płuc (POChP)",
-                "answer4":"Niewydolność układu krążenia",
-                "answer5":"Choroba wieńcowa",
-                "answer6":"Niewydolność nerek",
-                "answer7":"Nawracający zespół nerczycowy",
-                "answer8":"Choroby wątroby",
-                "answer9":"Choroby metaboliczne (np. cukrzyca typu I, dna moczanowa, zespół metaboliczny, hemosyderoza)",
-                "answer10":"Choroby neurologiczne (np. padaczka, stwardnienie rozsiane, udar mózgu, migrena)",
-                "answer11":"Choroby neurorozwojowe (np. rozszczepy kręgosłupa, rozdwojenie rdzenia, rozszczepy czaszkowo-mózgowe)"
-            }
-        ]
-    },
-    {
-        "question11": "Czy pracujesz jako:",
-        "answers": [
-            {
-                "answer1":"Weterynarz",
-                "answer2":"Zajmujesz się wypychaniem zwierząt",
-                "answer3":"Diagnosta laboratoryjny",
-                "answer4":"Leśnik",
-                "answer5":"Myśliwy",
-                "answer6":"Speleolog",
-                "answer7":"Rzeźnik",
-                "answer8":"Pracownik szkół/handlu i transportu",
-                "answer9":"Pracownik służb mundurowych"
-            }
-        ]
-    },
-    {
-        "question12": "Czy jesteś po przeszczepienie narządów lub tkanek?",
-        "answers": [
-            {
-                "answer1":"Tak",
-                "answer2":"Nie"
-            }
-        ]
-    },
-    {
-        "question13": "Czy jesteś zakażona/y wirusem HIV?",
-        "answers": [
-            {
-                "answer1":"Tak",
-                "answer2":"Nie"
-            }
-        ]
-    },
-    {
-        "question14": "Czy cierpisz na zaburzenia odporności?",
-        "answers": [
-            {
-                "answer1":"Tak",
-                "answer2":"Nie"
-            }
-        ]
-    }
-]
+{
+  "1": {
+    "question":"Podaj swoją płeć",
+    "answers": [
+      { "answer":"Kobieta" },
+      { "answer":"Mężczyzna" }
+    ]
+  },
+  "2": {
+    "question":"Podaj swój rok urodzenia:"
+  },
+  "3": {
+    "question":"Czy jesteś pracownikiem ochrony zdrowia?",
+    "answers": [
+      { "answer":"Tak" },
+      { "answer":"Nie" }
+    ]
+  },
+  "4": {
+    "question":"Czy pracujesz na oddziale neonatologicznym lub pediatrycznym?",
+    "answers": [
+      { "answer":"Tak" },
+      { "answer":"Nie" }
+    ]
+  },
+  "5": {
+    "question":"Czy jesteś w ciąży?",
+    "answers": [
+      { "answer":"Tak" },
+      { "answer":"Nie" }
+    ]
+  },
+  "6": {
+    "question":"Czy planujesz zajść w ciążę?",
+    "answers": [
+      { "answer":"Tak" },
+      { "answer":"Nie" }
+    ]
+  },
+  "7": {
+    "question":"Czy jesteś w trakcie karmienia piersią?",
+    "answers": [
+      { "answer":"Tak" },
+      { "answer":"Nie" }
+    ]
+  },
+  "8": {
+    "question": "Czy masz kontakt z małymi dziećmi?",
+    "answers": [
+      { "answer":"Tak" },
+      { "answer":"Nie" }
+    ]
+  },
+  "9": {
+    "question":"Czy jesteś przed lub po zabiegu usunięcia śledziony lub Twoja śledziona nie działa prawidłowo?",
+    "answers": [
+      { "answer":"Tak" },
+      { "answer":"Nie" }
+    ]
+  },
+  "10": {
+    "question":"Czy cierpisz na choroby przewlekłe?",
+    "answer1":"Niewydolność układu oddechowego",
+    "answer2":"Astma oskrzelowa",
+    "answer3":"Przewlekła obturacyjna choroba płuc (POChP)",
+    "answer4":"Niewydolność układu krążenia",
+    "answer5":"Choroba wieńcowa",
+    "answer6":"Niewydolność nerek",
+    "answer7":"Nawracający zespół nerczycowy",
+    "answer8":"Choroby wątroby",
+    "answer9":"Choroby metaboliczne (np. cukrzyca typu I, dna moczanowa, zespół metaboliczny, hemosyderoza)",
+    "answer10":"Choroby neurologiczne (np. padaczka, stwardnienie rozsiane, udar mózgu, migrena)",
+    "answer11":"Choroby neurorozwojowe (np. rozszczepy kręgosłupa, rozdwojenie rdzenia, rozszczepy czaszkowo-mózgowe)"
+  },
+  "11": {
+    "question": "Czy pracujesz jako:",
+    "answer1":"Weterynarz",
+    "answer2":"Zajmujesz się wypychaniem zwierząt",
+    "answer3":"Diagnosta laboratoryjny",
+    "answer4":"Leśnik",
+    "answer5":"Myśliwy",
+    "answer6":"Speleolog",
+    "answer7":"Rzeźnik",
+    "answer8":"Pracownik szkół/handlu i transportu",
+    "answer9":"Pracownik służb mundurowych"
+  },
+  "12": {
+    "question": "Czy jesteś po przeszczepienie narządów lub tkanek?",
+    "answers": [
+      { "answer":"Tak" },
+      { "answer":"Nie" }
+    ]
+  },
+  "13": {
+    "question": "Czy jesteś zakażona/y wirusem HIV?",
+    "answers": [
+      { "answer":"Tak" },
+      { "answer":"Nie" }
+    ]
+  },
+  "14": {
+    "question": "Czy cierpisz na zaburzenia odporności?",
+    "answers": [
+      { "answer":"Tak" },
+      { "answer":"Nie" }
+    ]
+  }
+}
