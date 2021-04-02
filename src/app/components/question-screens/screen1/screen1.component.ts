@@ -7,8 +7,7 @@ import {ResultsService} from '../../shared/results/results.service';
 @Component({
   // tslint:disable-next-line:component-selector
   selector: 'screen1',
-  templateUrl: './screen1.component.html',
-  styleUrls: ['./screen1.component.css']
+  templateUrl: './screen1.component.html'
 })
 export class Screen1Component implements OnInit {
 
