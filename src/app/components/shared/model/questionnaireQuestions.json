@@ -1,6 +1,6 @@
 {
   "1": {
-    "question":"Podaj swoją płeć",
+    "question":"Podaj swoją płeć:",
     "answers": [
       { "answer":"Kobieta" },
       { "answer":"Mężczyzna" }

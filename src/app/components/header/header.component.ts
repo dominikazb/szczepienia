@@ -7,9 +7,6 @@ import {Component} from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-
   public title = 'Lekarz Rodzinny.blog';
   public subtitle = 'zdrowie okiem lekarza. od początku. do końca.';
-
-  constructor() { }
 }
