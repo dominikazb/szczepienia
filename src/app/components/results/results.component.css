@@ -1,3 +1,16 @@
 .main_results_div__wrapper {
   background-color: red;
 }
+
+
+.card-header {
+  background: rgb(255,255,255);
+  background: -moz-linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(192,192,192,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(192,192,192,1) 100%);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(192,192,192,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#c0c0c0",GradientType=1);
+}
+
+.header-link {
+  color: black;
+}
