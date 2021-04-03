@@ -8,6 +8,9 @@ import {Component, OnInit} from '@angular/core';
 })
 export class ResultsComponent implements OnInit {
 
+  public firstIsCollapsed = true;
+  public secondIsCollapsed = true;
+
   constructor() { }
 
   ngOnInit(): void {

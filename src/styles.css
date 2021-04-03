@@ -16,7 +16,7 @@ body, html {
 @media (max-width: 779px) {
   .main_card__container__wide_40 {
     width: 95%;
-    margin-top: 180px;
+    margin-top: 140px;
     margin-bottom: 30px;
   }
   .main_card__container__wide_50 {
@@ -167,7 +167,15 @@ input[type='checkbox'] {
 .custom-answer-box {
   background-color: #F8F8F8;
   padding: 10px;
-  border: 1px #C8C8C8 solid;
+  border: 1px #E0E0E0 solid;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.custom-answer-box:hover {
+  background-color: #F0F0F0;
+  padding: 10px;
+  border: 1px #E0E0E0 solid;
   border-radius: 10px;
   width: 100%;
 }
