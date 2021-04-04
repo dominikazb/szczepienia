@@ -18,19 +18,23 @@ body, html {
 @media (max-width: 779px) {
   .main_card__container__wide_40 {
     width: 95%;
-    margin-bottom: 30px;
+    padding-top: 50px;
+    padding-bottom: 40px;
   }
   .main_card__container__wide_50 {
     width: 95%;
-    margin-bottom: 30px;
+    padding-top: 50px;
+    padding-bottom: 40px;
   }
   .main_card__container__wide_60 {
     width: 95%;
-    margin-bottom: 30px;
+    padding-top: 50px;
+    padding-bottom: 40px;
   }
   .main_card__container__wide_80 {
     width: 95%;
-    margin-bottom: 30px;
+    padding-top: 50px;
+    padding-bottom: 40px;
   }
   div.card-body {
     padding: 0px;
@@ -40,19 +44,23 @@ body, html {
 @media (min-width: 780px) and (max-width: 1099px) {
   .main_card__container__wide_40 {
     width: 80%;
-    margin-bottom: 30px;
+    padding-top: 50px;
+    padding-bottom: 40px;
   }
   .main_card__container__wide_50 {
     width: 80%;
-    margin-bottom: 30px;
+    padding-top: 50px;
+    padding-bottom: 40px;
   }
   .main_card__container__wide_60 {
     width: 80%;
-    margin-bottom: 30px;
+    padding-top: 50px;
+    padding-bottom: 40px;
   }
   .main_card__container__wide_80 {
     width: 90%;
-    margin-bottom: 30px;
+    padding-top: 50px;
+    padding-bottom: 40px;
   }
   div.card-body {
     padding: 20px;
@@ -62,19 +70,23 @@ body, html {
 @media (min-width: 1100px) and (max-width: 1200px) {
   .main_card__container__wide_40 {
     width: 60%;
-    margin-bottom: 30px;
+    padding-top: 50px;
+    padding-bottom: 40px;
   }
   .main_card__container__wide_50 {
     width: 70%;
-    margin-bottom: 30px;
+    padding-top: 50px;
+    padding-bottom: 40px;
   }
   .main_card__container__wide_60 {
     width: 70%;
-    margin-bottom: 30px;
+    padding-top: 50px;
+    padding-bottom: 40px;
   }
   .main_card__container__wide_80 {
     width: 80%;
-    margin-bottom: 30px;
+    padding-top: 50px;
+    padding-bottom: 40px;
   }
   div.card-body {
     padding: 20px;
@@ -84,22 +96,22 @@ body, html {
 @media (min-width: 1201px) {
   .main_card__container__wide_40 {
     width: 40%;
-    padding-top: 40px;
+    padding-top: 50px;
     padding-bottom: 40px;
   }
   .main_card__container__wide_50 {
     width: 50%;
-    padding-top: 40px;
+    padding-top: 50px;
     padding-bottom: 40px;
   }
   .main_card__container__wide_60 {
     width: 60%;
-    padding-top: 40px;
+    padding-top: 50px;
     padding-bottom: 40px;
   }
   .main_card__container__wide_80 {
     width: 80%;
-    padding-top: 40px;
+    padding-top: 50px;
     padding-bottom: 40px;
   }
   div.card-body {

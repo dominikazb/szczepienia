@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   // tslint:disable-next-line:component-selector
@@ -6,14 +6,4 @@ import {Component, OnInit} from '@angular/core';
   templateUrl: './results.component.html',
   styleUrls: ['./results.component.css']
 })
-export class ResultsComponent implements OnInit {
-
-  public firstIsCollapsed = true;
-  public secondIsCollapsed = true;
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-}
+export class ResultsComponent { }
