@@ -180,3 +180,14 @@ input[type='checkbox'] {
 div.btn-group-vertical {
   width: 100%;
 }
+
+
+
+/* ======== text properties ======== */
+.custom_blue {
+  color: #387bfe;
+}
+
+.bold {
+  font-weight: bold;
+}
