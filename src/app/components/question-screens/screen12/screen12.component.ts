@@ -17,7 +17,7 @@ export class Screen12Component implements OnInit {
   public questionnaireForm: FormGroup;
   public currentIndex: number | undefined;
 
-  constructor(private processVariablesService: ProcessVariablesService,
+  constructor(public processVariablesService: ProcessVariablesService,
               private resultsService: ResultsService,
               private router: Router) { }
 

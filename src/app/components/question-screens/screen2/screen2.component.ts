@@ -17,7 +17,7 @@ export class Screen2Component implements OnInit {
   // @ts-ignore
   public questionnaireForm: FormGroup;
 
-  constructor(private processVariablesService: ProcessVariablesService,
+  constructor(public processVariablesService: ProcessVariablesService,
               private resultsService: ResultsService,
               private datePipe: DatePipe,
               private router: Router) { }

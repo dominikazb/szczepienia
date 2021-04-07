@@ -26,7 +26,6 @@ export class Screen10Component implements OnInit {
   public answer9: string | undefined;
   public answer10: string | undefined;
   public answer11: string | undefined;
-  public someBoolean = true;
 
   constructor(public processVariablesService: ProcessVariablesService,
               private resultsService: ResultsService,
