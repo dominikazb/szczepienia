@@ -1,40 +1,43 @@
 body, html {
   margin:0;
   height: 100%;
-  background-color: #F5F5F5;
+  background-color: #b6e3f8;
 }
 
 .applyGoogleFont {
   font-family: 'Playfair Display', serif;
 }
 
+input {
+  visibility:hidden;
+}
+
 /* ============ question card layout ============ */
 .main_card__wrapper {
-  background-color: #F5F5F5;
+  background-color: #b6e3f8;
   width: 100%;
-  height: 100%;
 }
 
 @media (max-width: 779px) {
   .main_card__container__wide_40 {
     width: 95%;
-    padding-top: 50px;
-    padding-bottom: 40px;
+    padding-top: 80px;
+    padding-bottom: 100px;
   }
   .main_card__container__wide_50 {
     width: 95%;
-    padding-top: 50px;
-    padding-bottom: 40px;
+    padding-top: 80px;
+    padding-bottom: 100px;
   }
   .main_card__container__wide_60 {
     width: 95%;
-    padding-top: 50px;
-    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   .main_card__container__wide_80 {
     width: 95%;
-    padding-top: 50px;
-    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   div.card-body {
     padding: 0px;
@@ -71,22 +74,22 @@ body, html {
   .main_card__container__wide_40 {
     width: 60%;
     padding-top: 50px;
-    padding-bottom: 40px;
+    padding-bottom: 80px;
   }
   .main_card__container__wide_50 {
     width: 70%;
     padding-top: 50px;
-    padding-bottom: 40px;
+    padding-bottom: 80px;
   }
   .main_card__container__wide_60 {
     width: 70%;
     padding-top: 50px;
-    padding-bottom: 40px;
+    padding-bottom: 80px;
   }
   .main_card__container__wide_80 {
     width: 80%;
     padding-top: 50px;
-    padding-bottom: 40px;
+    padding-bottom: 80px;
   }
   div.card-body {
     padding: 20px;
@@ -97,22 +100,22 @@ body, html {
   .main_card__container__wide_40 {
     width: 40%;
     padding-top: 50px;
-    padding-bottom: 40px;
+    padding-bottom: 80px;
   }
   .main_card__container__wide_50 {
     width: 50%;
     padding-top: 50px;
-    padding-bottom: 40px;
+    padding-bottom: 80px;
   }
   .main_card__container__wide_60 {
     width: 60%;
     padding-top: 50px;
-    padding-bottom: 40px;
+    padding-bottom: 80px;
   }
   .main_card__container__wide_80 {
     width: 80%;
     padding-top: 50px;
-    padding-bottom: 40px;
+    padding-bottom: 80px;
   }
   div.card-body {
     padding: 20px;
@@ -162,7 +165,8 @@ input[type='checkbox'] {
 }
 
 .custom-answer-box {
-  background-color: #F8F8F8;
+  color: #04379c;
+  background-color: #b6e3f8;
   padding: 10px;
   border: 1px #E0E0E0 solid;
   border-radius: 10px;
@@ -170,7 +174,17 @@ input[type='checkbox'] {
 }
 
 .custom-answer-box:hover {
-  background-color: #F0F0F0;
+  color: white;
+  background-color: #52a0fd;
+  padding: 10px;
+  border: 1px #E0E0E0 solid;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.custom-answer-box__on_hover {
+  color: white;
+  background-color: #52a0fd;
   padding: 10px;
   border: 1px #E0E0E0 solid;
   border-radius: 10px;
@@ -181,11 +195,26 @@ div.btn-group-vertical {
   width: 100%;
 }
 
-
+button.btn.btn-warning.btn-block.applyGoogleFont {
+  background-color: #b6e3f8;
+  border-color: #b6e3f8;
+}
 
 /* ======== text properties ======== */
 .custom_blue {
   color: #387bfe;
+}
+
+.custom_blue__lighter {
+  color: #53c6fc;
+}
+
+.custom_blue__darker {
+  color: #04379c;
+}
+
+.black {
+  color: black;
 }
 
 .bold {

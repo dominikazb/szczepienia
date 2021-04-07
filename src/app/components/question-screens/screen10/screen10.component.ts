@@ -12,7 +12,6 @@ import {Router} from '@angular/router';
 export class Screen10Component implements OnInit {
 
   public question10 = '';
-  public nextStepButtonText = '';
   // @ts-ignore
   public questionnaireForm: FormGroup;
 
@@ -27,6 +26,7 @@ export class Screen10Component implements OnInit {
   public answer9: string | undefined;
   public answer10: string | undefined;
   public answer11: string | undefined;
+  public someBoolean = true;
 
   constructor(public processVariablesService: ProcessVariablesService,
               private resultsService: ResultsService,
@@ -35,7 +35,6 @@ export class Screen10Component implements OnInit {
   ngOnInit(): void {
     // @ts-ignore
     this.question10 = this.processVariablesService.questionnaireData[10].question;
-    this.nextStepButtonText = this.processVariablesService.nextStepButtonText;
     this.getPossibleAnswers();
     this.buildForm();
   }

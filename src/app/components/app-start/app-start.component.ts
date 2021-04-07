@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import {ProcessVariablesService} from '../shared/services/process-variables.service';
 
 @Component({
   selector: 'app-start',
@@ -6,12 +7,5 @@ import {Component} from '@angular/core';
   styleUrls: ['./app-start.component.css']
 })
 export class AppStartComponent {
-
-  public fillInQuestionnaire = 'Wypełnij ankietę';
-  public covid = 'Covid';
-  public pneumococcus = 'Pneumokoki';
-  public pregnancy = 'Ciąża';
-  public orderEbook = 'Zamów ebooka';
-
-  constructor() { }
+  constructor(public processVariablesService: ProcessVariablesService) { }
 }

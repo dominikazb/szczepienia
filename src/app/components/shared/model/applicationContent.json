@@ -1,0 +1,23 @@
+{
+  "commonData": {
+    "goBackBtnText":"Cofnij",
+    "nextBtnText":"Dalej",
+    "submitForm":"Złóż formularz"
+  },
+  "header": {
+    "title":"Lekarz Rodzinny.blog",
+    "subtitle":"Zdrowie okiem lekarza. Od początku. Do końca."
+  },
+  "appStart": {
+    "fillInQuestionnaire":"Wypełnij ankietę",
+    "questionnaireInfo":"Wypełnij ankietę wprowadzając podstawowe informacje na temat Twojego zdrowia i uzyskaj listę zalecanych dla Ciebie szczepionek.",
+    "covid":"Covid-19",
+    "pneumococcus":"Pneumokoki",
+    "pregnancy":"Ciąża",
+    "flu":"Grypa",
+    "orderEbook":"Zamów ebooka",
+    "orderEbookInfo":"Zamów darmowego ebooka w którym znajdziesz kompendium wiedzy na temat szczepionek.",
+    "orderEbookBtn":"Zamów",
+    "carouselTopText":"Dowiedz się więcej na temat zalecanych szczepień."
+  }
+}

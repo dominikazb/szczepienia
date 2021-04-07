@@ -2,19 +2,22 @@
   <div class="main_card__container__wide_40">
     <form [formGroup]="questionnaireForm" (ngSubmit)="onSubmit()">
       <div class="card question__card">
-        <h4 class="applyGoogleFont">{{question7}}</h4>
+        <h4 class="applyGoogleFont custom_blue__darker">{{question7}}</h4>
 
         <hr>
 
         <div class="card-body">
           <div class="btn-group-vertical">
-            <label *ngFor="let yesNoAnswer of answers" class="custom-answer-box">
-              <input formControlName="yesNoAnswer"
-                     [value]="yesNoAnswer"
-                     type="radio"
-                     name="yesNoAnswer"
-                     id="yesNoAnswer">
-              <span class="radio__label">{{yesNoAnswer}}</span>
+            <label *ngFor="let yesNoAnswer of answers, let i = index" class="custom-answer-box"
+                   [ngClass]="{'custom-answer-box__on_hover' : currentIndex === i}">
+              <div (click)="passIndexValue(i)">
+                <input formControlName="yesNoAnswer"
+                       [value]="yesNoAnswer"
+                       type="radio"
+                       name="yesNoAnswer"
+                       id="yesNoAnswer">
+                <span class="radio__label">{{yesNoAnswer}}</span>
+              </div>
             </label>
           </div>
         </div>
@@ -25,13 +28,13 @@
           <div class="button__left d-flex justify-content-start">
             <button class="btn btn-warning btn-block applyGoogleFont"
                     type="button"
-                    (click)="goBack()">Cofnij</button>
+                    (click)="goBack()">{{processVariablesService.applicationData.commonData.goBackBtnText}}</button>
           </div>
           <div class="button__center d-flex justify-content-center"></div>
           <div class="button__right d-flex justify-content-end">
             <button class="btn btn-primary btn-block applyGoogleFont"
                     type="submit"
-                    [disabled]="!questionnaireForm.valid">Dalej
+                    [disabled]="!questionnaireForm.valid">{{processVariablesService.applicationData.commonData.nextBtnText}}
             </button>
           </div>
         </div>

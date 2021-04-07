@@ -13,9 +13,9 @@ export class Screen1Component implements OnInit {
 
   public genders: string[] = [];
   public question1 = '';
-
   // @ts-ignore
   public questionnaireForm: FormGroup;
+  public currentIndex: number | undefined;
 
   constructor(private processVariablesService: ProcessVariablesService,
               private resultsService: ResultsService,
@@ -25,6 +25,7 @@ export class Screen1Component implements OnInit {
     // @ts-ignore
     this.question1 = this.processVariablesService.questionnaireData[1].question;
     this.getPossibleAnswers();
+    this.getIndexOfChosenAnswer();
     this.buildForm();
   }
 
@@ -39,6 +40,18 @@ export class Screen1Component implements OnInit {
     this.questionnaireForm = new FormGroup({
       gender: new FormControl(this.resultsService.results.answer1, Validators.required)
     });
+  }
+
+  private getIndexOfChosenAnswer(): void {
+    this.genders.forEach(gender => {
+      if (gender === this.resultsService.results.answer1) {
+        this.currentIndex = this.genders.indexOf(gender);
+      }
+    });
+  }
+
+  passIndexValue(index: number): void {
+    this.currentIndex = index;
   }
 
   public onSubmit(): void {

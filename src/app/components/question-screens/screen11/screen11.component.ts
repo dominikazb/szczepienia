@@ -12,7 +12,6 @@ import {Router} from '@angular/router';
 export class Screen11Component implements OnInit {
 
   public question11 = '';
-  public nextStepButtonText = '';
   // @ts-ignore
   public questionnaireForm: FormGroup;
 
@@ -33,7 +32,6 @@ export class Screen11Component implements OnInit {
   ngOnInit(): void {
     // @ts-ignore
     this.question11 = this.processVariablesService.questionnaireData[11].question;
-    this.nextStepButtonText = this.processVariablesService.nextStepButtonText;
     this.getPossibleAnswers();
     this.buildForm();
   }

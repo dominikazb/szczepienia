@@ -13,9 +13,9 @@ export class Screen5Component implements OnInit {
 
   public answers: string[] = [];
   public question5 = '';
-  public nextStepButtonText = '';
   // @ts-ignore
   public questionnaireForm: FormGroup;
+  public currentIndex: number | undefined;
 
   constructor(private processVariablesService: ProcessVariablesService,
               private resultsService: ResultsService,
@@ -25,7 +25,7 @@ export class Screen5Component implements OnInit {
     // @ts-ignore
     this.question5 = this.processVariablesService.questionnaireData[5].question;
     this.getPossibleAnswers();
-    this.nextStepButtonText = this.processVariablesService.nextStepButtonText;
+    this.getIndexOfChosenAnswer();
     this.buildForm();
   }
 
@@ -40,6 +40,18 @@ export class Screen5Component implements OnInit {
     this.questionnaireForm = new FormGroup({
       yesNoAnswer: new FormControl(this.resultsService.results.answer5, Validators.required)
     });
+  }
+
+  private getIndexOfChosenAnswer(): void {
+    this.answers.forEach(answer => {
+      if (answer === this.resultsService.results.answer5) {
+        this.currentIndex = this.answers.indexOf(answer);
+      }
+    });
+  }
+
+  passIndexValue(index: number): void {
+    this.currentIndex = index;
   }
 
   public onSubmit(): void {

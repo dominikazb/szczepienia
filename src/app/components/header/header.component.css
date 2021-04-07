@@ -1,37 +1,24 @@
-.main_div__header {
+.wavy_pattern {
+  bottom: 0;
+  left: 0;
   width: 100%;
-  height: 220px;
-  background-color: #F5F5F5;
-  color: #696969;
+  height: 150px;
+  background-size: cover;
+  background: url('src/assets/graphics/app_header.png') no-repeat;
 }
 
-@media (max-width: 780px) {
-  .icon_home {
-    visibility: hidden;
-  }
-  .title__font_size {
-    font-size: 28px;
-    font-weight: bold;
-    text-align: center;
-  }
-  .subtitle__font_size {
-    font-size: 12px;
-    text-align: center;
-  }
-}
-@media (min-width: 780px) {
-  .icon_home {
-    color: #C0C0C0;
-    font-size: 30px;
-    text-decoration:none;
-    padding-top: 70px;
-  }
-  .title__font_size {
-    font-size: 50px;
-    padding-top: 30px;
-  }
-  .subtitle__font_size {
-    font-size: 12px;
-  }
+.title_wrapper {
+  padding-top: 20px;
+  padding-left: 50px;
 }
 
+.header_title {
+  font-size: 32px;
+  color: white;
+}
+
+.header_subtitle {
+  color: lightblue;
+  margin-top: -15px;
+  font-size: 12px;
+}

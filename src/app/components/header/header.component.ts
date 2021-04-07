@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import {ProcessVariablesService} from '../shared/services/process-variables.service';
 
 @Component({
   // tslint:disable-next-line:component-selector
@@ -7,6 +8,5 @@ import {Component} from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-  public title = 'Lekarz Rodzinny.blog';
-  public subtitle = 'zdrowie okiem lekarza. od początku. do końca.';
+  constructor(public processVariablesService: ProcessVariablesService) { }
 }

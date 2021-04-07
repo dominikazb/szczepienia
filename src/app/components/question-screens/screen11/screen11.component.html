@@ -2,45 +2,54 @@
   <div class="main_card__container__wide_50">
     <form [formGroup]="questionnaireForm" (ngSubmit)="onSubmit()">
       <div class="card question__card">
-
         <div class="card-body">
-          <h4 class="applyGoogleFont">{{question11}}</h4>
+          <h4 class="applyGoogleFont custom_blue__darker">{{question11}}</h4>
 
           <hr>
+
           <div class="btn-group-vertical">
-            <label class="custom-answer-box">
+            <label class="custom-answer-box" [ngClass]="{'custom-answer-box__on_hover' :
+            questionnaireForm.value.answer1}">
               <input formControlName="answer1" type="checkbox" name="answer1" id="answer1">
               <span class="checkbox__label">{{answer1}}</span>
             </label>
-            <label class="custom-answer-box">
+            <label class="custom-answer-box" [ngClass]="{'custom-answer-box__on_hover' :
+            questionnaireForm.value.answer2}">
               <input formControlName="answer2" type="checkbox" name="answer2" id="answer2">
               <span class="checkbox__label">{{answer2}}</span>
             </label>
-            <label class="custom-answer-box">
+            <label class="custom-answer-box" [ngClass]="{'custom-answer-box__on_hover' :
+            questionnaireForm.value.answer3}">
               <input formControlName="answer3" type="checkbox" name="answer3" id="answer3">
               <span class="checkbox__label">{{answer3}}</span>
             </label>
-            <label class="custom-answer-box">
+            <label class="custom-answer-box" [ngClass]="{'custom-answer-box__on_hover' :
+            questionnaireForm.value.answer4}">
               <input formControlName="answer4" type="checkbox" name="answer4" id="answer4">
               <span class="checkbox__label">{{answer4}}</span>
             </label>
-            <label class="custom-answer-box">
+            <label class="custom-answer-box" [ngClass]="{'custom-answer-box__on_hover' :
+            questionnaireForm.value.answer5}">
               <input formControlName="answer5" type="checkbox" name="answer5" id="answer5">
               <span class="checkbox__label">{{answer5}}</span>
             </label>
-            <label class="custom-answer-box">
+            <label class="custom-answer-box" [ngClass]="{'custom-answer-box__on_hover' :
+            questionnaireForm.value.answer6}">
               <input formControlName="answer6" type="checkbox" name="answer6" id="answer6">
               <span class="checkbox__label">{{answer6}}</span>
             </label>
-            <label class="custom-answer-box">
+            <label class="custom-answer-box" [ngClass]="{'custom-answer-box__on_hover' :
+            questionnaireForm.value.answer7}">
               <input formControlName="answer7" type="checkbox" name="answer7" id="answer7">
               <span class="checkbox__label">{{answer7}}</span>
             </label>
-            <label class="custom-answer-box">
+            <label class="custom-answer-box" [ngClass]="{'custom-answer-box__on_hover' :
+            questionnaireForm.value.answer8}">
               <input formControlName="answer8" type="checkbox" name="answer8" id="answer8">
               <span class="checkbox__label">{{answer8}}</span>
             </label>
-            <label class="custom-answer-box">
+            <label class="custom-answer-box" [ngClass]="{'custom-answer-box__on_hover' :
+            questionnaireForm.value.answer9}">
               <input formControlName="answer9" type="checkbox" name="answer9" id="answer9">
               <span class="checkbox__label">{{answer9}}</span>
             </label>
@@ -52,11 +61,12 @@
             <div class="button__left d-flex justify-content-start">
               <button class="btn btn-warning btn-block applyGoogleFont"
                       type="button"
-                      (click)="goBack()">Cofnij</button>
+                      (click)="goBack()">{{processVariablesService.applicationData.commonData.goBackBtnText}}</button>
             </div>
             <div class="button__center d-flex justify-content-center"></div>
             <div class="button__right d-flex justify-content-end">
-              <button class="btn btn-primary btn-block applyGoogleFont" type="submit">Dalej</button>
+              <button class="btn btn-primary btn-block applyGoogleFont"
+                      type="submit">{{processVariablesService.applicationData.commonData.nextBtnText}}</button>
             </div>
           </div>
         </div>
