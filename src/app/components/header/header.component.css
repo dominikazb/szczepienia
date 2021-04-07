@@ -7,9 +7,17 @@
   background: url('src/assets/graphics/app_header.png') no-repeat;
 }
 
-.title_wrapper {
-  padding-top: 15px;
-  padding-left: 30px;
+@media (max-width: 509px) {
+  div.title_wrapper {
+    padding-top: 15px;
+    text-align: center;
+  }
+}
+@media (min-width: 510px) {
+  div.title_wrapper {
+    padding-top: 15px;
+    padding-left: 30px;
+  }
 }
 
 .header_title {

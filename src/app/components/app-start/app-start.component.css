@@ -264,8 +264,8 @@ a:hover, a:focus, a:active {
 
 @media (max-width: 767px) {
   .app_start__image {
-    width: 50%;
-    height: auto;
+    height: 300px;
+    width: auto;
   }
 }
 @media (min-width: 768px) {
