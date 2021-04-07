@@ -262,25 +262,13 @@ a:hover, a:focus, a:active {
 }
 
 
-@media (max-width: 779px) {
+@media (max-width: 767px) {
   .app_start__image {
     width: 50%;
     height: auto;
   }
 }
-@media (min-width: 780px) and (max-width: 1099px) {
-  .app_start__image {
-    width: 60%;
-    height: auto;
-  }
-}
-@media (min-width: 1100px) and (max-width: 1200px) {
-  .app_start__image {
-    width: 70%;
-    height: auto;
-  }
-}
-@media (min-width: 1201px) {
+@media (min-width: 768px) {
   .app_start__image {
     width: 100%;
     height: auto;
