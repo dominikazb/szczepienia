@@ -2,7 +2,7 @@
   "commonData": {
     "goBackBtnText":"Cofnij",
     "nextBtnText":"Dalej",
-    "submitForm":"Złóż formularz"
+    "submitForm":"WYŚLIJ"
   },
   "header": {
     "title":"Lekarz Rodzinny.blog",
