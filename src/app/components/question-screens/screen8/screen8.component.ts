@@ -60,6 +60,6 @@ export class Screen8Component implements OnInit {
   }
 
   public goBack(): void {
-    this.router.navigate(['/question7'], { skipLocationChange: true }).then(() => {});
+    this.router.navigate(['/question3'], { skipLocationChange: true }).then(() => {});
   }
 }

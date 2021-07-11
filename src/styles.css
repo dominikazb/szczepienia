@@ -190,8 +190,7 @@ input[type='checkbox'] {
 }
 
 .custom-answer-box:hover {
-  color: white;
-  background-color: #52a0fd;
+  color: #206afc;
   padding: 10px;
   border: 1px #E0E0E0 solid;
   border-radius: 10px;
